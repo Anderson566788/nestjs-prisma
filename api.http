@@ -1,0 +1,67 @@
+
+
+## HEALTH
+
+GET http://localhost:3000/
+
+
+## CATEGORIES
+
+###
+GET http://localhost:3000/categories
+
+###
+GET http://localhost:3000/categories/1
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{ 
+    "name": "Categoria 2" 
+}
+
+###
+PATCH http://localhost:3000/categories/1
+Content-Type: application/json
+
+{ 
+    "name": "Categoria 11" 
+}
+
+
+###
+DELETE http://localhost:3000/categories/1
+
+
+
+
+## PRODUCTS
+
+###
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/1
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{ 
+    "name": "Produto 1",
+    "price": 100.00,
+    "categoryId": 2
+}
+
+###
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{ 
+    "price": 200 
+}
+
+
+###
+DELETE http://localhost:3000/products/1
